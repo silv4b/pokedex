@@ -50,9 +50,9 @@ main {
 
 .form {
   position: absolute;
-  width: 65%;
+  width: 70%;
   top: 65%;
-  left: 13%;
+  left: 11.5%;
 }
 
 .input__search {
@@ -70,11 +70,15 @@ main {
 .buttons {
   position: absolute;
   bottom: 17%;
-  left: 50%;
-  width: 65%;
-  transform: translate(-60%, 0);
+  left: 49.5%;
+  width: 70%;
+  transform: translate(-55%, 0);
   display: flex;
   gap: 1rem;
+}
+
+.btn_rand {
+  width: 4rem !important
 }
 
 .button {

@@ -9,6 +9,7 @@ const input = document.querySelector('.input__search');
 
 const buttonProx = document.querySelector('.btn_prox');
 const buttonPrev = document.querySelector('.btn_prev');
+const buttonRand = document.querySelector('.btn_rand');
 
 let searchPokemon = 1;
 
@@ -63,6 +64,17 @@ buttonPrev.addEventListener('click', () => {
     searchPokemon -= 1;
     renderPokemon(searchPokemon);
   }
+
+});
+
+buttonRand.addEventListener('click', () => {
+
+  function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  searchPokemon = getRandomArbitrary(1, 1008);
+  renderPokemon(searchPokemon);
 
 });
 
