@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- javascript -->
+  <script defer src="./js/script.js"></script>
+
+  <!-- links -->
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Pokémon | Pokédex</title>
+</head>
+
+<body>
+
+  <main>
+    <!-- pokemon api image -->
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/6.gif" alt="pokemon" class="pokemon__image">
+
+    <!-- dados do pokemon -->
+    <h1 class="pokemon__data">
+      <span class="pokemon__number">6</span> -
+      <span class="pokemon__name">charizard</span>
+    </h1>
+
+    <!-- botoes de pesquisa anterior/proximo -->
+    <form class="form">
+      <input class="input__search" type="search" required placeholder="pokemon name or number">
+    </form>
+
+    <div class="buttons btn_prev">
+      <button class="button btn_prev">Prev &lt; </button>
+      <button class="button btn_prox">Prox &gt; </button>
+    </div>
+
+    <!-- pokedex image -->
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+  </main>
+
+</body>
+
+</html>
